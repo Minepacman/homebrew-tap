@@ -7,9 +7,9 @@ cask "punto-de-venta" do
          intel: "355787d415e612eabefd6b01458c1a6c6c743aab5edbc46795408e278d64a9fe"
 
   url "https://github.com/Minepacman/Punto-Ventas/releases/download/v#{version}/PuntoDeVenta-#{version}-macos-#{arch}.dmg"
-  name "Punto de Venta"
-  desc "Caja registradora de escritorio para tiendas de abarrotes"
-  homepage "https://github.com/Minepacman/Punto-Ventas"
+  name "Caja Libre"
+  desc "Punto de venta libre para tiendas de abarrotes (antes Punto de Venta)"
+  homepage "https://minepacman.github.io/Punto-Ventas/"
 
   livecheck do
     url :url

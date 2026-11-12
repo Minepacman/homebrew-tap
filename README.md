@@ -1,6 +1,6 @@
 # homebrew-tap
 
-Tap de [Homebrew](https://brew.sh) con el cask de **Punto de Venta**, el punto de venta de
+Tap de [Homebrew](https://brew.sh) con el cask de **Caja Libre** (antes «Punto de Venta»), el punto de venta libre de
 escritorio para tiendas de abarrotes ([Minepacman/Punto-Ventas](https://github.com/Minepacman/Punto-Ventas)).
 
 ## Instalar en macOS
@@ -10,7 +10,7 @@ brew tap minepacman/tap
 brew install --cask punto-de-venta
 ```
 
-Instala `PuntoDeVenta.app` en `/Applications` (elige solo el `.dmg` de Apple Silicon o el de Intel
+Instala `PuntoDeVenta.app` (nombre técnico; en el Dock aparece «Caja Libre») en `/Applications` (elige solo el `.dmg` de Apple Silicon o el de Intel
 según tu Mac). Para actualizar: `brew upgrade --cask punto-de-venta`.
 
 ### La primera vez macOS la bloquea
@@ -65,3 +65,11 @@ Mientras las `sha256` del cask sean ceros (release todavía no construida), `bre
 
 Comprobar el cask en local: `brew style Casks/punto-de-venta.rb` y, con el tap instalado,
 `brew audit --cask --online punto-de-venta`.
+
+## Canales oficiales
+
+Caja Libre es gratuito; este tap, el sitio <https://minepacman.github.io/Punto-Ventas/> y las releases de
+<https://github.com/Minepacman/Punto-Ventas> son los únicos canales del autor (Elias Oziel Sánchez Fernández).
+Cada `.dmg` tiene su suma en `SHA256SUMS.txt` y una attestation de procedencia de GitHub
+(`gh attestation verify <archivo> --repo Minepacman/Punto-Ventas`). El token del cask sigue siendo
+`punto-de-venta` para que las instalaciones existentes se actualicen sin cambios.
