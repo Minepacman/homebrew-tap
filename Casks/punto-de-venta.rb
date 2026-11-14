@@ -1,10 +1,10 @@
 cask "punto-de-venta" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.0.3"
+  version "1.0.4"
   # Sumas provisionales (la release aún no existía): las reemplaza scripts/actualizar-cask.sh
-  sha256 arm:   "91f66896a4218254a08f7831a5f27b7e9adc63db4859aa8321d4e5c3eb805fa2",
-         intel: "355787d415e612eabefd6b01458c1a6c6c743aab5edbc46795408e278d64a9fe"
+  sha256 arm:   "7e99d7677f4b990a103fb5848ad9526917003ece19e71ca4098ea8a382eaae8e",
+         intel: "590d6554f02f1cece15307d8a3154f2b458f4f94a2e584001e2181689fd6ed16"
 
   url "https://github.com/Minepacman/Punto-Ventas/releases/download/v#{version}/PuntoDeVenta-#{version}-macos-#{arch}.dmg"
   name "Caja Libre"
